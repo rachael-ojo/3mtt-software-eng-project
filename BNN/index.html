@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Banner</title>
+    <style>
+        body {
+            margin: 30, 30;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .banner {
+            background-color: #ff5733; /* Banner color */
+            color: white;
+            text-align: center;
+            padding: 0px 0px;
+            font-size: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        #p {
+            font-style: italic;
+            font-size: smaller;
+            font-weight: lighter;
+        }
+        .banner button {
+            background: white;
+            color: #ff5733;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+        .banner button:hover {
+            background: #ffddcc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        Adesco Integrated Global Farm Enterprise  
+        <p>Eggs at Your Doorstep!</p>
+    </div>
+
+    <script>
+        function closeBanner() {
+            document.querySelector('.banner').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
+
